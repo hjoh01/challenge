@@ -12,4 +12,4 @@ img = img.astype(np.uint8) # NOTE: tifffile.imsave would show a 'bilevel'-relate
 
 # save with compression: ADOBE_DEFLATE algorithm with level 9 (among 0~9)
 # NOTE: the saving filename is the same with the loading filename. In other words, it may overwrite your original image.
-imsave(submission_filename, img, compress=9)
+imwrite(submission_filename, img, compression='Deflate')
